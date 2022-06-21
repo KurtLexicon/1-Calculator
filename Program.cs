@@ -14,7 +14,8 @@ namespace Calc
         {
             while(true)
             {
-                Console.WriteLine("Enter an expression (e.g. 4 + 3). Leave blank for terminating the program");
+                Console.WriteLine("Enter an expression containing 2 operands and 1 operator (e.g. 42 + 666)");
+                Console.WriteLine("Leave blank and just press ENTER for terminating the program");
                 string str = Console.ReadLine();
                 if (String.IsNullOrWhiteSpace(str)) break;
                 try
