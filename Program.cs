@@ -54,7 +54,7 @@ namespace Calc
         static public Expression Parse(string str)
         {
 
-            string pattern = @"\s*([+-]?\d*[,\.]?\d+)\s*([+*/\-])\s*([+-]?\d*[,\.]?\d+)\s*";
+            string pattern = @"^\s*([+-]?\d*[,\.]?\d+)\s*([+*/\-])\s*([+-]?\d*[,\.]?\d+)\s*$";
             Match match = Regex.Match(str, pattern);
             
             if (!match.Success && match.Groups.Count != 4)
